@@ -18,11 +18,7 @@ const DB = process.env.DATABASE
 mongoose
   // .connect(process.env.DATABASE_LOCAL, {
   .connect(DB, {
-    useNewUrlParser: true,
-    useCreateIndex: true,
-    // useUnifiedTopology: true,
-    useFindAndModify: false,
-    useUnifiedTopology: true 
+    useNewUrlParser: true, useUnifiedTopology: true
   })
   .then(() => console.log('DB Connection successful!'));
 
